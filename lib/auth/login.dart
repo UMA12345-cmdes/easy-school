@@ -33,10 +33,10 @@ class _LoginState extends State<Login> {
           child: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(top: 100, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 90, left: 15, right: 15),
             child: Card(
               child: Container(
-                height: MediaQuery.of(context).size.height / 1.6,
+                height: MediaQuery.of(context).size.height / 1.4,
                 margin: EdgeInsets.all(10),
                 child: Form(
                   key: _formKey,
@@ -160,6 +160,8 @@ class _LoginState extends State<Login> {
                     _signInFetching = false;
                   }),
                   Fluttertoast.showToast(msg: 'Sign In Successful'),
+                  email.clear(),
+                  pass.clear(),
                   Navigator.popUntil(context, (route) => route.isFirst),
                   if (email.text == 'admin@gmail.com' && pass.text == '123456')
                     {

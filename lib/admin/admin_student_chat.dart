@@ -47,7 +47,7 @@ class _AdminStudentChatState extends State<AdminStudentChat> {
               children: [
                 SingleChildScrollView(
                   child: Container(
-                    height: 570,
+                    height: 470,
                     child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: element.length,
@@ -75,7 +75,7 @@ class _AdminStudentChatState extends State<AdminStudentChat> {
                 StatefulBuilder(
             builder: (BuildContext context, StateSetter setState) =>
                 Padding(
-                  padding: const EdgeInsets.all(0),
+                  padding: const EdgeInsets.only(top: 30),
                   child: TextFormField(
                     controller: chatController,
                     decoration: InputDecoration(

@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
    MyApp({Key? key}) : super(key: key);
   
 
-  User? user= FirebaseAuth.instance.currentUser!;
+  // User? user= FirebaseAuth.instance.currentUser;
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
